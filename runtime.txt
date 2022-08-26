@@ -1,0 +1,13 @@
+Results for the extraLargeArray insert 1.2905708 s   append 4.5359 ms
+Results for the largeArray      insert 11.5428 ms    append 702.2 μs
+Results for the mediumArray     insert 229 μs        append 210.8 μs
+Results for the smallArray      insert 87.8 μs       append 132 μs
+Results for the tinyArray       insert 47.1 μs       append 115.7 μs
+
+
+
+
+
+
+explanation:
+the larger the array, the longer it takes for both functions. Insert takes less time for very small arrays but when larger than the medium size it begins to longer than append, and when the array becomes very large it takes significantly longer. Append scales much better with size. Insert takes longer because the computer needs to shift every element of the array by 1 index number, giving it an O(n) complexity whereas append just tacks something on the end, an O(1) complexity.
